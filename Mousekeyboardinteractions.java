@@ -12,6 +12,7 @@ public class Mousekeyboardinteractions {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Admin\\Desktop\\Akshay Selenium\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.amazon.in/gp/customer-reviews/RXKJ7XOL5UJZY?ASIN=B007Z9K45U");
+		driver.manage().window().maximize();
 		Actions a = new Actions(driver);// Actions class used for mouse and keyboard interactions
 		// moving to particular element,Mouse interactions
 		a.moveToElement(driver.findElement(By.xpath("//a[@id='nav-link-accountList']"))).build().perform();
