@@ -21,6 +21,7 @@ public class Mousekeyboardinteractions {
 		// Keyboard interactions
 		a.moveToElement(driver.findElement(By.cssSelector("#twotabsearchtextbox"))).click().keyDown(Keys.SHIFT)
 				.sendKeys("akshay").doubleClick().build().perform();
+		driver.close();
 	}
 
 }
